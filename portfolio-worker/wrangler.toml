@@ -1,0 +1,7 @@
+name = "portfolio-worker"
+main = "worker.js"
+compatibility_date = "2023-01-01"
+
+[vars]
+SUPABASE_URL = "https://vfuetwtiumsljzqbjldz.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZmdWV0d3RpdW1zbGp6cWJqbGR6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjExNzMyOTgsImV4cCI6MjAzNjc0OTI5OH0.GjxPZ_X_DytdgaBiOcM5SYXu2mhXSVwTfeYi91pjI0o"
