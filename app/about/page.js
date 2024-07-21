@@ -16,10 +16,10 @@ import { Inter, Playfair_Display } from 'next/font/google'
 pursuit of a better life in this country. Out of practical concern, I made a bold decision to go back to colleger for shifting my career path to computer science.
 My educational journey starts from a community college and ends with graduation from UC Berkeley. On this ten-year self-improvement path, I have overcome numerous
 challenges and difficulties while fulfilling my family roles as a wife and mother of two children. When I was able to embrace a new life as a software engineer,
-my career development was abruptly paused by the onset of the COVID-19 pandemic. It was really a hard time but also provided me with an opportunity for reflection and growth.
-I took proactive steps to learn new technologies and skills and practice them in making various projects. Now I am equipped with a diverse skill set,
-ranging from front-end design to back-end architecture. I am fully resdy to resume my career as a software engineer. Feel free to explore my projects
-and get in touch if you'd like to discuss potential collaborations or opportunities.
+my career development was abruptly paused by the onset of the COVID-19 pandemic. It was really a hard time since I had been trapped home and took care of my little
+kids, but it also provided me with an opportunity for reflection and growth. I took proactive steps to learn new technologies and skills and practice them in making
+various projects. Now I am equipped with a diverse skill set, ranging from front-end design to back-end architecture. I am fully resdy to resume my career as a software
+engineer. Feel free to explore my projects and get in touch if you'd like to discuss potential collaborations or opportunities.
             </p>
             <div className="mt-8">
               <h2 className={`${playfair.className} text-2xl font-semibold text-gray-800 mb-4`}>Skills & Technologies</h2>
