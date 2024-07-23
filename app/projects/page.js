@@ -1,8 +1,8 @@
 export default function Projects() {
     const projects = [
       { id: 1, title: 'My Portfolio Website', description: 'Welcome to my portfolio! I am Melody Huang, a mother of two children and also a passionate fullstack software developer.'},
-      { id: 2, title: 'Chatting Platform', description: 'Create a chatting platform for family communication.' },
-      { id: 3, title: 'Schedule Management Reminder', description: 'Create a reminder to keep track of the time for daily schedule.' },
+      { id: 2, title: 'Family Chatting Platform', description: 'It is a chatting platform for family communication with reminding notes for marked members.' },
+      { id: 3, title: 'Japanese Learning App', description: 'My personal Japanese learning app providing sentences tailored for personal learning pace.' },
     ]
 
     return (
