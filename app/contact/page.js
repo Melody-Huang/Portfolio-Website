@@ -1,9 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import { Inter, Playfair_Display } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-const playfair = Playfair_Display({ subsets: ['latin'] })
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -47,10 +43,10 @@ export default function ContactPage() {
       <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden">
           <div className="bg-emerald-600 px-6 py-4">
-            <h1 className={`${playfair.className} text-4xl font-bold text-white`}>Contact Me</h1>
+            <h1 className={`text-4xl font-bold text-white`}>Contact Me</h1>
           </div>
           <div className="p-6">
-            <p className={`${inter.className} text-gray-600 mb-8`}>I'd love to hear from you! Whether you have a question or just want to say hi, feel free to drop me a message.</p>
+            <p className={`text-gray-600 mb-8`}>I'd love to hear from you! Whether you have a question or just want to say hi, feel free to drop me a message.</p>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
