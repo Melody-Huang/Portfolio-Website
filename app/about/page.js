@@ -8,46 +8,34 @@ export default function About() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-lg overflow-hidden">
-        <div className="relative h-64 bg-emerald-600">
-          <Image
-            src="/header-bg.jpg"
-            alt="Header background"
-            layout="fill"
-            objectFit="cover"
-            className="opacity-30"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                <Image
-                  src="/profile.jpg"
-                  alt="Melody Huang"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <h1 className={`${playfair.className} text-4xl font-bold text-white shadow-text`}>About Me</h1>
-            </div>
+        <div className="bg-emerald-600 px-6 py-4 flex items-center justify-between">
+          <h1 className={`${playfair.className} text-3xl font-bold text-white`}>About Me</h1>
+          <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-lg">
+            <Image
+              src="/profile.jpg"
+              alt="Melody Huang"
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         </div>
         <div className="px-8 py-12">
           <div className="max-w-3xl mx-auto">
             <p className={`${inter.className} text-lg text-gray-700 leading-relaxed mb-6`}>
-              My name is Melody Huang. 15 years ago, destiny brought me to America. Like countless first-generation immigrants, I worked hard in pursuit of a better life in this country. Out of practical concern, I made a bold decision to go back to college to shift my career path to computer science.
-            </p>
-            <div className="my-8 flex items-center">
-              <div className="flex-1 h-px bg-gray-300"></div>
-              <span className="px-4 text-gray-500 italic">My Journey</span>
-              <div className="flex-1 h-px bg-gray-300"></div>
-            </div>
-            <p className={`${inter.className} text-lg text-gray-700 leading-relaxed mb-6`}>
-              My educational journey started from a community college and ended with graduation from UC Berkeley. On this ten-year self-improvement path, I overcame numerous challenges and difficulties while fulfilling my family roles as a wife and mother of two children.
+              My name is Melody Huang. Fifteen years ago, I came to the United States with dreams of building a better future.
+              Like many first-generation immigrants, I embraced hard work and determination to achieve my goals. Driven by a passion for
+              career advancement, I return to college after being graduated for 10 years and made a career shift to pursue a degree in computer science.
             </p>
             <p className={`${inter.className} text-lg text-gray-700 leading-relaxed mb-6`}>
-              When I was able to embrace a new life as a software engineer, my career development was abruptly paused by the onset of the COVID-19 pandemic. It was a challenging time as I was trapped at home caring for my young children, but it also provided me with an opportunity for reflection and growth.
+              My educational journey began at a community college and culminated in my graduation from UC Berkeley.
+              Over this ten-year course, I balanced hard on the demanding roles of student, wife, and mother of two children,
+              and finally successfully transitioned into a new career as a software engineer.
             </p>
             <p className={`${inter.className} text-lg text-gray-700 leading-relaxed mb-6`}>
-              I took proactive steps to learn new technologies and skills, practicing them by creating various projects. Now, I am equipped with a diverse skill set, ranging from front-end design to back-end architecture. I am fully ready to resume my career as a software engineer.
+              The COVID-19 pandemic unexpectedly paused my career. However, I positively used this time for personal growth,
+              dedicating myself to learning new technologies and enhancing coding skills through various side projects. Now,
+              with a diverse skill set in front-end design and back-end implementation, I am fully prepared to resume my career
+              as a software engineer and contribute my expertise and passion to innovative projects.
             </p>
             <div className="mt-12">
               <h2 className={`${playfair.className} text-2xl font-semibold text-gray-800 mb-6 text-center`}>Skills & Technologies</h2>
@@ -64,9 +52,12 @@ export default function About() {
               <p className={`${inter.className} text-gray-700`}>B.S. in Computer Science, UC Berkeley</p>
             </div>
             <div className="mt-12 text-center">
-              <p className={`${inter.className} text-gray-600 italic`}>
-                Feel free to explore my projects and get in touch if you would like to discuss potential collaborations or opportunities.
+              <p className={`${inter.className} text-lg text-emerald-600 font-semibold`}>
+                Let's connect and work on something amazing together!
               </p>
+              <a href="/contact" className="inline-block mt-4 px-6 py-3 bg-emerald-600 text-white rounded-full font-medium transition-all hover:bg-emerald-700 hover:shadow-lg">
+                Get in Touch
+              </a>
             </div>
           </div>
         </div>
