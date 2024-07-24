@@ -46,7 +46,7 @@ export default function ContactPage() {
             <h1 className={`text-4xl font-bold text-white`}>Contact Me</h1>
           </div>
           <div className="p-6">
-            <p className={`text-gray-600 mb-8`}>I'd love to hear from you! Whether you have a question or just want to say hi, feel free to drop me a message.</p>
+            <p className={`text-gray-600 mb-8`}>I&apos;d love to hear from you! Whether you have a question or just want to say hi, feel free to drop me a message.</p>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -96,7 +96,7 @@ export default function ContactPage() {
             </form>
             {submitStatus === 'success' && (
               <div className="mt-4 p-4 bg-green-100 text-green-700 rounded-md">
-                Thank you for your message! I'll get back to you soon.
+                Thank you for your message! I&apos;ll get back to you soon.
               </div>
             )}
             {submitStatus === 'error' && (

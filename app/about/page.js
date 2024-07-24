@@ -1,5 +1,6 @@
 import { Inter, Playfair_Display } from 'next/font/google'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 const playfair = Playfair_Display({ subsets: ['latin'] })
@@ -14,8 +15,11 @@ export default function About() {
             <Image
               src="/profile.jpg"
               alt="Melody Huang"
-              layout="fill"
-              objectFit="cover"
+              fill
+              sizes="(max-width: 48px) 100vw, 48px"
+              style={{
+                objectFit: 'cover'
+              }}
             />
           </div>
         </div>
@@ -24,7 +28,7 @@ export default function About() {
             <p className={`${inter.className} text-lg text-gray-700 leading-relaxed mb-6`}>
               My name is Melody Huang. Fifteen years ago, I came to the United States with dreams of building a better future.
               Like many first-generation immigrants, I embraced hard work and determination to achieve my goals. Driven by a passion for
-              career advancement, I return to college after being graduated for 10 years and made a career shift to pursue a degree in computer science.
+              career advancement, I returned to college after being graduated for 10 years and made a career shift to pursue a degree in computer science.
             </p>
             <p className={`${inter.className} text-lg text-gray-700 leading-relaxed mb-6`}>
               My educational journey began at a community college and culminated in my graduation from UC Berkeley.
@@ -53,11 +57,11 @@ export default function About() {
             </div>
             <div className="mt-12 text-center">
               <p className={`${inter.className} text-lg text-emerald-600 font-semibold`}>
-                Let's connect and work on something amazing together!
+                Let&apos;s connect and work on something amazing together!
               </p>
-              <a href="/contact" className="inline-block mt-4 px-6 py-3 bg-emerald-600 text-white rounded-full font-medium transition-all hover:bg-emerald-700 hover:shadow-lg">
+              <Link href="/contact" className="inline-block mt-4 px-6 py-3 bg-emerald-600 text-white rounded-full font-medium transition-all hover:bg-emerald-700 hover:shadow-lg">
                 Get in Touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
