@@ -7,8 +7,9 @@ export default function Projects() {
       id: 1,
       title: 'My Portfolio Website',
       description: 'Welcome to my portfolio! I am Melody Huang, a mother of two children and also a passionate fullstack software developer.',
-      image: '/portfolio-preview.jpg',
-      link: '/'
+      image: '/images/proj1-image.png',
+      link: '/',
+      url: "https://portfolio-website-cqy.pages.dev/"
     },
     {
       id: 2,
@@ -37,17 +38,31 @@ export default function Projects() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  layout="fill"
-                  objectFit="cover"
+                  width={600}
+                  height={300}
+                  className="object-cover"
                 />
               </div>
               <div className="p-6">
                 <h2 className={`text-2xl font-bold mb-3 text-gray-800`}>{project.title}</h2>
                 <p className={`text-gray-600 mb-4`}>{project.description}</p>
-                <Link href={project.link}
-                      className="inline-block bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-600 transition duration-300">
-                  View Project
-                </Link>
+                {project.url ? (
+                  <a
+                    href={project.url}
+                    className="inline-block bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-600 transition duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </a>
+                ) : (
+                  <Link
+                    href={project.link}
+                    className="inline-block bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-600 transition duration-300"
+                  >
+                    View Project
+                  </Link>
+                )}
               </div>
             </div>
           ))}
